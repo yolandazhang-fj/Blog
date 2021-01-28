@@ -1,7 +1,7 @@
 ---
 title: "VizMakeover1"
 description: |
-  A short description of the post.
+  A data visualisation on labour force, Singapore
 author:
   - name: Yolanda Zhang
     url: {}
@@ -74,7 +74,7 @@ library(kableExtra)
 kable(clarity,type='html',align='l') %>%
   kable_styling () %>%
   row_spec(0, color = 'white', background = 'black', align='l') %>% #format header color and background. 
-  column_spec(1:2, width_min="3em") %>%
+  column_spec(1:2, width_min="30em") %>%
   row_spec(1:4, extra_css = "border-bottom: 1px solid")
 
 ```
@@ -100,7 +100,7 @@ library(kableExtra)
 kable(aesthetic,type='html',align='l') %>%
   kable_styling () %>%
   row_spec(0, color = 'white', background = 'black', align='l') %>% #format header color and background. 
-  column_spec(1:2, width_min="3em") %>%
+  column_spec(1:2, width_min="30em") %>%
   row_spec(1:3, extra_css = "border-bottom: 1px solid")
 ```
 
