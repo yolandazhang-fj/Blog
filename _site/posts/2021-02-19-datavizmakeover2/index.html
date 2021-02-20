@@ -2293,117 +2293,117 @@ Remove the field label.
 </div>
 <h1 id="sketch-of-proposed-design">2.0 Sketch of Proposed Design</h1>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="1.jpg" width="400" /></p>
+<p><img src="1.jpg" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <p>Work done: Add error bars into the scatter plot showing the percentage of people that will take vaccine. Add the parameter “confidence level” to allow user select the confidence level they would like to accept. Sorted country in all the charts by probability of positive attitude to vaccine. Synchronize the axis of the charts. Set the color of the stacked bar chart properly. Add interactive action to allow user manipulate the visualization. a) By default, the “infection expectation” and “consequence expectation” charts will not show. It will only show when the user say that he would like to learn more. b) Country(s) will be highlighted in the stacked bar chart if user select the particular country or hover around the particular country in the scatter plot showing the percentage of people that will take vaccine.</p>
 <h1 id="preparing-process">3.0 Preparing Process</h1>
 <h3 id="data-preparation">3.1 Data Preparation</h3>
 <p>Since the data have many field that are not useful for the analytics purpose, delete the extra columns.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="2.png" width="400" /></p>
+<p><img src="2.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <ol start="2" type="a">
 <li>Add data sources to tableau</li>
 </ol>
 <p>Since each country’s data comprises a separate csv file, keep all the files in a single folder and then connect one of them to tableau, all the files within the folder will show on the files field. We need to remove the file imported first and then double click “new union”, drag all the files into the union creating field.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="3.png" width="400" /></p>
+<p><img src="3.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="4.png" width="400" /></p>
+<p><img src="4.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <p>Then your data source would look like below. We would have only one file that is the union file and a column called table name are automatically generated. In this case, we use it to indicate the country. Right click the header of each column to rename and edit aliases of that measure.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="5.png" width="400" /></p>
+<p><img src="5.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="6.png" width="400" /></p>
+<p><img src="6.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <h3 id="create-the-scatter-plot-chart-with-error-bar">3.2 Create the scatter plot chart with error bar</h3>
 <p>We are going to check the probability of positive attitude and its lower and higher confidence interval.</p>
 <p>First of all, we are going to create a parameter to indicate the confidence level we would like to accept. Click the small triangle in the data field of our sheet, we can create parameters. Set the datatype to be “string” and allowable values to be list and input the value of the list in the list editing field.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="7.png" width="400" /></p>
+<p><img src="7.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="8.png" width="400" /></p>
+<p><img src="8.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <p>After that, we need to create a calculation field called Z that identify the z value of different confidence levels.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="9.png" width="400" /></p>
+<p><img src="9.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <p>Then we are able to calculate the probability of positive views and the error bar. Six calculation fields are need here.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="10.png" width="400" /></p>
+<p><img src="10.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="11.png" width="400" /></p>
+<p><img src="11.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="12.png" width="400" /></p>
+<p><img src="12.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="13.png" width="400" /></p>
+<p><img src="13.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="14.png" width="400" /></p>
+<p><img src="14.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="15.png" width="400" /></p>
+<p><img src="15.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="16.png" width="400" /></p>
+<p><img src="16.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <p>With these calculation fields, we are able to draw our scatter plots now. We drag measure values to columns and country to rows. For the measure values, we only need the CI_lower and CI_higher. Then we drag ProbabilityPositiveView into the graph. Then we under the “measure values”mark, we set the graph pattern to line and measure values as the path variable. As the last step, we set sort country descendingly by ProbabilityPsotiveView.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="17.png" width="400" /></p>
+<p><img src="17.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="18.png" width="400" /></p>
+<p><img src="18.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="19.png" width="400" /></p>
+<p><img src="19.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <h3 id="create-the-stacked-barchart">3.3 Create the stacked barchart</h3>
 <p>We are going to calculate the starting point of each level of attitude toward vaccine and let the length of them to be their percentage over the total observation.</p>
 <p>Six calculation fields needed here.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="20.png" width="400" /></p>
+<p><img src="20.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="21.png" width="400" /></p>
+<p><img src="21.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="22.png" width="400" /></p>
+<p><img src="22.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="23.png" width="400" /></p>
+<p><img src="23.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="24.png" width="400" /></p>
+<p><img src="24.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="25.png" width="400" /></p>
+<p><img src="25.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="26.png" width="400" /></p>
+<p><img src="26.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="27.png" width="400" /></p>
+<p><img src="27.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="28.png" width="400" /></p>
+<p><img src="28.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <h3 id="create-the-dashboard">3.4 Create the dashboard</h3>
 <p>Drag the individual graph into the area wanted Add the actions that allow user to manipulate the data visualization. Three actions need here. One is filter action that filter out all value of the infection and consequence charts. Values in these two charts will only show when user selected the country in the AttitudeVACC chart. The other two highlight action will highlight the countries selected or hovered around in the Attitude VACC chart.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="29.png" width="400" /></p>
+<p><img src="29.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="30.png" width="400" /></p>
+<p><img src="30.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="31.png" width="400" /></p>
+<p><img src="31.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <h1 id="conclusion">4.0 Conclusion</h1>
 <ol type="a">
