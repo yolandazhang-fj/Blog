@@ -16,7 +16,7 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# 1 Critiques of Data Visualisation
+# 1.  Critiques of Data Visualisation
 
 
 #### a. Clarity
@@ -96,7 +96,7 @@ kable(aesthetic,type='html',align='c') %>%
 ```
 
 
-# 2 Sketch of Proposed Design
+# 2. Sketch of Proposed Design
 ```{r 1, echo=FALSE, out.width =400,fig.align = 'center' }
 knitr::include_graphics("1.jpg")
 ```
@@ -113,7 +113,7 @@ a) By default, the “infection expectation” and “consequence expectation”
 b) Country(s) will be highlighted in the stacked bar chart if user select the particular country or hover around the particular country in the scatter plot showing the percentage of people that will take vaccine.
 
 
-# 3 Preparing Process
+# 3.  Preparing Process
 
 ### 3.1	Data Preparation
 
@@ -322,7 +322,7 @@ knitr::include_graphics("31.png")
 
 
 
-# 4.0 Conclusion
+# 4. Conclusion
 a.	The five most_pro_vaccine countries show a negative relationship between attitude to vaccine and infection expectation; The five least_pro_vaccine countries show a positive relationship between attitude to vaccine and infection expectation.
 
 b.	Two great leaps of consequence expectation could be observed at the third and nineth most_pro_vaccine countries. Which means if we divided the countries into three groups based on attitude toward vaccine, in the group level, consequence expectation and attitude toward vaccine relates negatively—those are more likely to get the vaccine believe that they have a higher probability of bad consequence if infected. Within each group, however, those are more likely to get the vaccine believe that they have a less probability of bad consequence if infected.
