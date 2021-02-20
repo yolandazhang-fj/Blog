@@ -2054,7 +2054,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div class="d-article">
 <h1 id="critiques-of-data-visualisation">1.0 Critiques of Data Visualisation</h1>
-<h2 id="a.-clarity">a. Clarity</h2>
+<h3 id="a.-clarity">a. Clarity</h3>
 <div class="layout-chunk" data-layout="l-body">
 <table>
 <thead>
@@ -2111,7 +2111,7 @@ To get actionable insights, in addition to a general understanding of which coun
 </tbody>
 </table>
 </div>
-<h2 id="b.-aesthetic">b. Aesthetic</h2>
+<h3 id="b.-aesthetic">b. Aesthetic</h3>
 <div class="layout-chunk" data-layout="l-body">
 <table>
 <thead>
@@ -2168,8 +2168,8 @@ Since we can easily recognise the y aixs of the two charts arrange countries, a 
 </tbody>
 </table>
 </div>
-<p>#2.0 Ways to improve current design</p>
-<h2 id="a.-clarity-1">a. Clarity</h2>
+<h2 id="ways-to-improve-current-design">1.1 Ways to improve current design</h2>
+<h3 id="a.-clarity-1">a. Clarity</h3>
 <div class="layout-chunk" data-layout="l-body">
 <table>
 <thead>
@@ -2226,7 +2226,7 @@ Add additional charts depicting other fields to allow readers to deep dive furth
 </tbody>
 </table>
 </div>
-<h2 id="b.-aesthetic-1">b. Aesthetic</h2>
+<h3 id="b.-aesthetic-1">b. Aesthetic</h3>
 <div class="layout-chunk" data-layout="l-body">
 <table>
 <thead>
@@ -2289,14 +2289,12 @@ Remove the field label.
 </div>
 <p>Work done: Add error bars into the scatter plot showing the percentage of people that will take vaccine. Add the parameter “confidence level” to allow user select the confidence level they would like to accept. Sorted country in all the charts by probability of positive attitude to vaccine. Synchronize the axis of the charts. Set the color of the stacked bar chart properly. Add interactive action to allow user manipulate the visualization. a) By default, the “infection expectation” and “consequence expectation” charts will not show. It will only show when the user say that he would like to learn more. b) Country(s) will be highlighted in the stacked bar chart if user select the particular country or hover around the particular country in the scatter plot showing the percentage of people that will take vaccine.</p>
 <h1 id="preparing-process">3.0 Preparing Process</h1>
-<h2 id="data-preparation">3.1 Data Preparation</h2>
+<h3 id="data-preparation">3.1 Data Preparation</h3>
 <p>Since the data have many field that are not useful for the analytics purpose, delete the extra columns.</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="2.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
-<ol start="2" type="a">
-<li>Add data sources to tableau</li>
-</ol>
+<p>Add data sources to tableau</p>
 <p>Since each country’s data comprises a separate csv file, keep all the files in a single folder and then connect one of them to tableau, all the files within the folder will show on the files field. We need to remove the file imported first and then double click “new union”, drag all the files into the union creating field.</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="3.png" width="400" style="display: block; margin: auto;" /></p>
@@ -2311,7 +2309,7 @@ Remove the field label.
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="6.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
-<h2 id="create-the-scatter-plot-chart-with-error-bar">3.2 Create the scatter plot chart with error bar</h2>
+<h3 id="create-the-scatter-plot-chart-with-error-bar">3.2 Create the scatter plot chart with error bar</h3>
 <p>We are going to check the probability of positive attitude and its lower and higher confidence interval.</p>
 <p>First of all, we are going to create a parameter to indicate the confidence level we would like to accept. Click the small triangle in the data field of our sheet, we can create parameters. Set the datatype to be “string” and allowable values to be list and input the value of the list in the list editing field.</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -2356,7 +2354,7 @@ Remove the field label.
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="19.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
-<h2 id="create-the-stacked-barchart">3.3 Create the stacked barchart</h2>
+<h3 id="create-the-stacked-barchart">3.3 Create the stacked barchart</h3>
 <p>We are going to calculate the starting point of each level of attitude toward vaccine and let the length of them to be their percentage over the total observation.</p>
 <p>Six calculation fields needed here.</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -2386,7 +2384,7 @@ Remove the field label.
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="28.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
-<h2 id="create-the-dashboard">3.4 Create the dashboard</h2>
+<h3 id="create-the-dashboard">3.4 Create the dashboard</h3>
 <p>Drag the individual graph into the area wanted Add the actions that allow user to manipulate the data visualization. Three actions need here. One is filter action that filter out all value of the infection and consequence charts. Values in these two charts will only show when user selected the country in the AttitudeVACC chart. The other two highlight action will highlight the countries selected or hovered around in the Attitude VACC chart.</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="29.png" width="400" style="display: block; margin: auto;" /></p>

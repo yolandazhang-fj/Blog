@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = FALSE)
 # 1.0 Critiques of Data Visualisation
 
 
-## a. Clarity
+### a. Clarity
 ```{r}
 SN <-c(1,2,3,4,5)
 Comments <-c("The colors of each categorical level in the stacked bar chart representing the attitude towards vaccine are not set properly. A diverging palette should be used for variables with a meaningful order type.","The scale of the stacked bar chart representing the attitude towards vaccine is not set properly. For easy comparison, the zero point should be set at the middle of the categorical level that represents the moderate attitude of comments.","For the scatter plot chart, the percentage of strongly agree itself can not provide us a full view on which country is more pro-vaccine. We might also want to know how this result based on sample values could be projected to the population.","For easy comparison, the order of how the countries is represented in these two charts should be the same.","To get actionable insights, in addition to a general understanding of which country is more pro-vaccine, we might want to figure out reasons behind this attitude. ")
@@ -35,7 +35,7 @@ kable(clarity,type='html',align='c',out.width="100%") %>%
   row_spec(1:5, extra_css = "border-bottom: 1px solid")
 ```
 
-## b. Aesthetic
+### b. Aesthetic
 
 ```{r}
 SN <-c(1,2,3,4,5)
@@ -55,9 +55,9 @@ kable(aesthetic,type='html',align='c') %>%
 
 
 
-#2.0  Ways to improve current design
+## 1.1  Ways to improve current design
 
-## a. Clarity
+### a. Clarity
 ```{r}
 Comments <-c("The colors of each categorical level in the stacked bar chart representing the attitude towards vaccine are not set properly. A diverging palette should be used for variables with a meaningful order type.","The scale of the stacked bar chart representing the attitude towards vaccine is not set properly. For easy comparison, A zero point should be set at the middle of the categorical level that represents the moderate attitude of comments.","The percentage of strongly agree itself can not illustrate what we are aiming to figure out—which country is more pro-vaccine.","For easy comparison, the order of how the countries is represented should be the same.","To get actionable insights, in addition to a general understanding of which country is more pro-vaccine, we might want to figure out reasons behind this attitude.")
 
@@ -77,7 +77,7 @@ kable(clarity,type='html',align='c') %>%
 
 
 
-## b. Aesthetic
+### b. Aesthetic
 
 ```{r}
 Comments <-c("What we would like to show the users at the first glance is an intuitive visual display of which country is more pro-vaccine. A scatter plot with error bar is more suitable for this task and should be more ye catching.","The legend title ”vac 1” has no meaning. Actually, we do not need a legend title.","The legend of the stacked bar chart is too far away and is not nicely presented.","Inconsistent x-axis labels across the two charts, where the x-axis labels for the left chart is shown as whole number while the right chart us shown to 1 decimal place.","Since we can easily recognise the y aixs of the two charts arrange countries, a field label is not needed")
@@ -115,7 +115,7 @@ b) Country(s) will be highlighted in the stacked bar chart if user select the pa
 
 # 3.0 Preparing Process
 
-## 3.1	Data Preparation
+### 3.1	Data Preparation
 
 Since the data have many field that are not useful for the analytics purpose, delete the extra columns.
 
@@ -125,7 +125,7 @@ knitr::include_graphics("2.png")
 ```
 
 
-b.	Add data sources to tableau
+Add data sources to tableau
 
 Since each country’s data comprises a separate csv file, keep all the files in a single folder and then connect one of them to tableau, all the files within the folder will show on the files field.
 We need to remove the file imported first and then double click “new union”, drag all the files into the union creating field.
@@ -156,7 +156,7 @@ knitr::include_graphics("6.png")
 
 
 
-## 3.2	Create the scatter plot chart with error bar 
+### 3.2	Create the scatter plot chart with error bar 
 
 
 
@@ -245,7 +245,7 @@ knitr::include_graphics("19.png")
 ```
 
 
-## 3.3 Create the stacked barchart
+### 3.3 Create the stacked barchart
 
 We are going to calculate the starting point of each level of attitude toward vaccine and let the length of them to be their percentage over the total observation.
 
@@ -298,7 +298,7 @@ knitr::include_graphics("28.png")
 
 
 
-##  3.4 Create the dashboard
+###  3.4 Create the dashboard
 Drag the individual graph into the area wanted
 Add the actions that allow user to manipulate the data visualization.
 Three actions need here.
