@@ -13,7 +13,7 @@ output:
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = FALSE,toc_float=FALSE)
 ```
 
 # 1.0 Critiques of Data Visualisation
@@ -36,8 +36,6 @@ kable(clarity,type='html',align='l') %>%
   row_spec(1:5, extra_css = "border-bottom: 1px solid")
 ```
 
-
-
 b. Aesthetic
 ```{r}
 SN <-c(1,2,3,4,5)
@@ -54,6 +52,23 @@ kable(aesthetic,type='html',align='l') %>%
   column_spec(1:2, width_min="3em") %>%
   row_spec(1:5, extra_css = "border-bottom: 1px solid")
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -101,7 +116,7 @@ kable(aesthetic,type='html',align='l') %>%
 
 
 # 2.0 Sketch of Proposed Design
-```{r 1, echo=FALSE, out.width =400}
+```{r 1, echo=FALSE, out.width =400,fig.align = 'center' }
 knitr::include_graphics("1.jpg")
 ```
 
@@ -124,7 +139,7 @@ b) Country(s) will be highlighted in the stacked bar chart if user select the pa
 Since the data have many field that are not useful for the analytics purpose, delete the extra columns.
 
 
-```{r 2, echo=FALSE, out.width = 400}
+```{r 2, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("2.png")
 ```
 
@@ -135,25 +150,25 @@ Since each country’s data comprises a separate csv file, keep all the files in
 We need to remove the file imported first and then double click “new union”, drag all the files into the union creating field.
 
 
-```{r 3, echo=FALSE, out.width = 400}
+```{r 3, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("3.png")
 ```
 
 
-```{r 4, echo=FALSE, out.width = 400}
+```{r 4, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("4.png")
 ```
 
 Then your data source would look like below. We would have only one file that is the union file and a column called table name are automatically generated. In this case, we use it to indicate the country. Right click the header of each column to rename and edit aliases of that measure.
 
 
-```{r 5, echo=FALSE, out.width = 400}
+```{r 5, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("5.png")
 ```
 
 
 
-```{r 6, echo=FALSE, out.width = 400}
+```{r 6, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("6.png")
 ```
 
@@ -171,19 +186,19 @@ accept. Click the small triangle in the data field of our sheet, we can create p
 
 
 
-```{r 7, echo=FALSE, out.width = 400}
+```{r 7, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("7.png")
 ```
 
 
 
-```{r 8, echo=FALSE, out.width = 400}
+```{r 8, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("8.png")
 ```
 
 After that, we need to create a calculation field called Z that identify the z value of different confidence levels.
 
-```{r 9, echo=FALSE, out.width = 400}
+```{r 9, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("9.png")
 ```
 
@@ -191,39 +206,39 @@ knitr::include_graphics("9.png")
 Then we are able to calculate the probability of positive views and the error bar. Six calculation fields are need here.
 
 
-```{r 10, echo=FALSE, out.width = 400}
+```{r 10, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("10.png")
 ```
 
 
 
-```{r 11, echo=FALSE, out.width = 400}
+```{r 11, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("11.png")
 ```
 
 
 
-```{r 12, echo=FALSE, out.width = 400}
+```{r 12, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("12.png")
 ```
 
 
-```{r 13, echo=FALSE, out.width = 400}
+```{r 13, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("13.png")
 ```
 
 
-```{r 14, echo=FALSE, out.width = 400}
+```{r 14, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("14.png")
 ```
 
 
-```{r 15, echo=FALSE, out.width = 400}
+```{r 15, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("15.png")
 ```
 
 
-```{r 16, echo=FALSE, out.width = 400}
+```{r 16, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("16.png")
 ```
 
@@ -234,17 +249,17 @@ We drag measure values to columns and country to rows. For the measure values, w
 Then we drag ProbabilityPositiveView into the graph. Then we under the “measure values”mark, we set the graph pattern to line and measure values as the path variable. 
 As the last step, we set sort country descendingly by ProbabilityPsotiveView.
 
-```{r 17, echo=FALSE, out.width = 400}
+```{r 17, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("17.png")
 ```
 
 
-```{r 18, echo=FALSE, out.width = 400}
+```{r 18, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("18.png")
 ```
 
 
-```{r 19, echo=FALSE, out.width = 400}
+```{r 19, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("19.png")
 ```
 
@@ -256,47 +271,47 @@ We are going to calculate the starting point of each level of attitude toward va
 Six calculation fields needed here.
 
 
-```{r 20, echo=FALSE, out.width = 400}
+```{r 20, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("20.png")
 ```
 
 
-```{r 21, echo=FALSE, out.width = 400}
+```{r 21, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("21.png")
 ```
 
 
-```{r 22, echo=FALSE, out.width = 400}
+```{r 22, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("22.png")
 ```
 
 
-```{r 23, echo=FALSE, out.width = 400}
+```{r 23, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("23.png")
 ```
 
 
-```{r 24, echo=FALSE, out.width = 400}
+```{r 24, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("24.png")
 ```
 
 
-```{r 25, echo=FALSE, out.width = 400}
+```{r 25, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("25.png")
 ```
 
 
-```{r 26, echo=FALSE, out.width = 400}
+```{r 26, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("26.png")
 ```
 
 
-```{r 27, echo=FALSE, out.width = 400}
+```{r 27, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("27.png")
 ```
 
 
-```{r 28, echo=FALSE, out.width = 400}
+```{r 28, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("28.png")
 ```
 
@@ -309,17 +324,17 @@ Three actions need here.
 One is filter action that filter out all value of the infection and consequence charts. Values in these two charts will only show when user selected the country in the AttitudeVACC chart.
 The other two highlight action will highlight the countries selected or hovered around in the Attitude VACC chart.
 
-```{r 29, echo=FALSE, out.width = 400}
+```{r 29, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("29.png")
 ```
 
 
-```{r 30, echo=FALSE, out.width = 400}
+```{r 30, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("30.png")
 ```
 
 
-```{r 31, echo=FALSE, out.width = 400}
+```{r 31, echo=FALSE, out.width = 400,fig.align = 'center'}
 knitr::include_graphics("31.png")
 ```
 
