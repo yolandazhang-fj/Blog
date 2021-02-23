@@ -20,19 +20,18 @@
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css" data-origin="pandoc">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -52,7 +51,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {   }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
@@ -117,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["1.jpg","10.png","11.png","12.png","13.png","14.png","15.png","16.png","17.png","18.png","19.png","2.png","20.png","21.png","22.png","23.png","24.png","25.png","26.png","27.png","28.png","29.png","3.png","30.png","31.png","4.png","5.png","6.png","7.png","8.png","9.png","datavizmakeover2_files/anchor-4.2.2/anchor.min.js","datavizmakeover2_files/bowser-1.9.3/bowser.min.js","datavizmakeover2_files/distill-2.2.21/template.v2.js","datavizmakeover2_files/jquery-1.11.3/jquery.min.js","datavizmakeover2_files/kePrint-0.0.1/kePrint.js","datavizmakeover2_files/lightable-0.0.1/lightable.css","datavizmakeover2_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["1.jpg","10.png","11.png","12.png","13.png","14.png","15.png","16.png","17.png","18.png","19.png","2.png","20.png","21.png","22.png","23.png","24.png","25.png","26.png","27.png","28.png","29.png","3.png","30.png","31.png","4.png","5.png","6.png","7.png","8.png","9.png","datavizmakeover2_files/anchor-4.2.2/anchor.min.js","datavizmakeover2_files/bowser-1.9.3/bowser.min.js","datavizmakeover2_files/distill-2.2.21/template.v2.js","datavizmakeover2_files/header-attrs-2.6/header-attrs.js","datavizmakeover2_files/jquery-1.11.3/jquery.min.js","datavizmakeover2_files/kePrint-0.0.1/kePrint.js","datavizmakeover2_files/lightable-0.0.1/lightable.css","datavizmakeover2_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -1997,6 +1996,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!--/radix_placeholder_distill-->
+  <script src="../../site_libs/header-attrs-2.6/header-attrs.js"></script>
   <script src="../../site_libs/kePrint-0.0.1/kePrint.js"></script>
   <link href="../../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
   <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -2059,52 +2059,52 @@ document.addEventListener('DOMContentLoaded', function() {
 <table>
 <thead>
 <tr>
-<th style="text-align:center;color: white !important;background-color: black !important;text-align: center;">
+<th style="text-align:left;color: white !important;background-color: black !important;text-align: left;">
 SN
 </th>
-<th style="text-align:center;color: white !important;background-color: black !important;text-align: center;">
+<th style="text-align:left;color: white !important;background-color: black !important;text-align: left;">
 Comments
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center;min-width: 2em; border-bottom: 1px solid">
+<td style="text-align:left;min-width: 2em; border-bottom: 1px solid">
 1
 </td>
-<td style="text-align:center;min-width: 2em; border-bottom: 1px solid">
+<td style="text-align:left;min-width: 2em; border-bottom: 1px solid">
 The colors of each categorical level in the stacked bar chart representing the attitude towards vaccine are not set properly. A diverging palette should be used for variables with a meaningful order type.
 </td>
 </tr>
 <tr>
-<td style="text-align:center;min-width: 2em; border-bottom: 1px solid">
+<td style="text-align:left;min-width: 2em; border-bottom: 1px solid">
 2
 </td>
-<td style="text-align:center;min-width: 2em; border-bottom: 1px solid">
+<td style="text-align:left;min-width: 2em; border-bottom: 1px solid">
 The scale of the stacked bar chart representing the attitude towards vaccine is not set properly. For easy comparison, the zero point should be set at the middle of the categorical level that represents the moderate attitude of comments.
 </td>
 </tr>
 <tr>
-<td style="text-align:center;min-width: 2em; border-bottom: 1px solid">
+<td style="text-align:left;min-width: 2em; border-bottom: 1px solid">
 3
 </td>
-<td style="text-align:center;min-width: 2em; border-bottom: 1px solid">
+<td style="text-align:left;min-width: 2em; border-bottom: 1px solid">
 For the scatter plot chart, the percentage of strongly agree itself can not provide us a full view on which country is more pro-vaccine. We might also want to know how this result based on sample values could be projected to the population.
 </td>
 </tr>
 <tr>
-<td style="text-align:center;min-width: 2em; border-bottom: 1px solid">
+<td style="text-align:left;min-width: 2em; border-bottom: 1px solid">
 4
 </td>
-<td style="text-align:center;min-width: 2em; border-bottom: 1px solid">
+<td style="text-align:left;min-width: 2em; border-bottom: 1px solid">
 For easy comparison, the order of how the countries is represented in these two charts should be the same.
 </td>
 </tr>
 <tr>
-<td style="text-align:center;min-width: 2em; border-bottom: 1px solid">
+<td style="text-align:left;min-width: 2em; border-bottom: 1px solid">
 5
 </td>
-<td style="text-align:center;min-width: 2em; border-bottom: 1px solid">
+<td style="text-align:left;min-width: 2em; border-bottom: 1px solid">
 To get actionable insights, in addition to a general understanding of which country is more pro-vaccine, we might want to figure out reasons behind this attitude.
 </td>
 </tr>
@@ -2116,52 +2116,52 @@ To get actionable insights, in addition to a general understanding of which coun
 <table>
 <thead>
 <tr>
-<th style="text-align:center;color: white !important;background-color: black !important;text-align: center;">
+<th style="text-align:left;color: white !important;background-color: black !important;text-align: left;">
 SN
 </th>
-<th style="text-align:center;color: white !important;background-color: black !important;text-align: center;">
+<th style="text-align:left;color: white !important;background-color: black !important;text-align: left;">
 Comments
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center;min-width: 2em; border-bottom: 1px solid">
+<td style="text-align:left;min-width: 2em; border-bottom: 1px solid">
 1
 </td>
-<td style="text-align:center;min-width: 2em; border-bottom: 1px solid">
+<td style="text-align:left;min-width: 2em; border-bottom: 1px solid">
 What we would like to show the users at the first glance is an intuitive visual display of which country is more pro-vaccine. A scatter plot with error bar is more suitable for this task and should be more ye catching.
 </td>
 </tr>
 <tr>
-<td style="text-align:center;min-width: 2em; border-bottom: 1px solid">
+<td style="text-align:left;min-width: 2em; border-bottom: 1px solid">
 2
 </td>
-<td style="text-align:center;min-width: 2em; border-bottom: 1px solid">
+<td style="text-align:left;min-width: 2em; border-bottom: 1px solid">
 The legend title ”vac 1” has no meaning. Actually, we do not need a legend title.
 </td>
 </tr>
 <tr>
-<td style="text-align:center;min-width: 2em; border-bottom: 1px solid">
+<td style="text-align:left;min-width: 2em; border-bottom: 1px solid">
 3
 </td>
-<td style="text-align:center;min-width: 2em; border-bottom: 1px solid">
+<td style="text-align:left;min-width: 2em; border-bottom: 1px solid">
 The legend of the stacked bar chart is too far away and is not nicely presented.
 </td>
 </tr>
 <tr>
-<td style="text-align:center;min-width: 2em; border-bottom: 1px solid">
+<td style="text-align:left;min-width: 2em; border-bottom: 1px solid">
 4
 </td>
-<td style="text-align:center;min-width: 2em; border-bottom: 1px solid">
+<td style="text-align:left;min-width: 2em; border-bottom: 1px solid">
 Scale of the x-axis of the two charts are not synchronized with inconsistent x-axis labels across the two charts. The x-axis labels for the left chart is shown as whole number while the right chart us shown to 1 decimal place.
 </td>
 </tr>
 <tr>
-<td style="text-align:center;min-width: 2em; border-bottom: 1px solid">
+<td style="text-align:left;min-width: 2em; border-bottom: 1px solid">
 5
 </td>
-<td style="text-align:center;min-width: 2em; border-bottom: 1px solid">
+<td style="text-align:left;min-width: 2em; border-bottom: 1px solid">
 Since we can easily recognise the y aixs of the two charts arrange countries, a field label is not needed.
 </td>
 </tr>
@@ -2174,52 +2174,52 @@ Since we can easily recognise the y aixs of the two charts arrange countries, a 
 <table>
 <thead>
 <tr>
-<th style="text-align:center;color: white !important;background-color: black !important;text-align: center;">
+<th style="text-align:left;color: white !important;background-color: black !important;text-align: left;">
 Comments
 </th>
-<th style="text-align:center;color: white !important;background-color: black !important;text-align: center;">
+<th style="text-align:left;color: white !important;background-color: black !important;text-align: left;">
 SuggestedImprovement
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center;width: 22em; border-bottom: 1px solid">
+<td style="text-align:left;width: 22em; border-bottom: 1px solid">
 The colors of each categorical level in the stacked bar chart representing the attitude towards vaccine are not set properly. A diverging palette should be used for variables with a meaningful order type.
 </td>
-<td style="text-align:center;width: 22em; border-bottom: 1px solid">
+<td style="text-align:left;width: 22em; border-bottom: 1px solid">
 A diverging palette should be used for a variable showing the degree of support for vaccines.
 </td>
 </tr>
 <tr>
-<td style="text-align:center;width: 22em; border-bottom: 1px solid">
+<td style="text-align:left;width: 22em; border-bottom: 1px solid">
 The scale of the stacked bar chart representing the attitude towards vaccine is not set properly. For easy comparison, A zero point should be set at the middle of the categorical level that represents the moderate attitude of comments.
 </td>
-<td style="text-align:center;width: 22em; border-bottom: 1px solid">
+<td style="text-align:left;width: 22em; border-bottom: 1px solid">
 A zero point should be set at the middle of the “3” categorical level, since it represents the medium degree of support for vaccine among the five.
 </td>
 </tr>
 <tr>
-<td style="text-align:center;width: 22em; border-bottom: 1px solid">
+<td style="text-align:left;width: 22em; border-bottom: 1px solid">
 The percentage of strongly agree itself can not illustrate what we are aiming to figure out—which country is more pro-vaccine.
 </td>
-<td style="text-align:center;width: 22em; border-bottom: 1px solid">
+<td style="text-align:left;width: 22em; border-bottom: 1px solid">
 Error bars should be added to the scatter plot to represent probability of agree with confidence interval.
 </td>
 </tr>
 <tr>
-<td style="text-align:center;width: 22em; border-bottom: 1px solid">
+<td style="text-align:left;width: 22em; border-bottom: 1px solid">
 For easy comparison, the order of how the countries is represented should be the same.
 </td>
-<td style="text-align:center;width: 22em; border-bottom: 1px solid">
+<td style="text-align:left;width: 22em; border-bottom: 1px solid">
 Order the countries of these two charts similarly.
 </td>
 </tr>
 <tr>
-<td style="text-align:center;width: 22em; border-bottom: 1px solid">
+<td style="text-align:left;width: 22em; border-bottom: 1px solid">
 To get actionable insights, in addition to a general understanding of which country is more pro-vaccine, we might want to figure out reasons behind this attitude.
 </td>
-<td style="text-align:center;width: 22em; border-bottom: 1px solid">
+<td style="text-align:left;width: 22em; border-bottom: 1px solid">
 Add additional charts depicting other fields to allow readers to deep dive further into the survey results and figure out reasons behind this attitude.
 </td>
 </tr>
@@ -2231,52 +2231,52 @@ Add additional charts depicting other fields to allow readers to deep dive furth
 <table>
 <thead>
 <tr>
-<th style="text-align:center;color: white !important;background-color: black !important;text-align: center;">
+<th style="text-align:left;color: white !important;background-color: black !important;text-align: left;">
 Comments
 </th>
-<th style="text-align:center;color: white !important;background-color: black !important;text-align: center;">
+<th style="text-align:left;color: white !important;background-color: black !important;text-align: left;">
 SuggestedImprovement
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center;width: 22em; border-bottom: 1px solid">
+<td style="text-align:left;width: 22em; border-bottom: 1px solid">
 What we would like to show the users at the first glance is an intuitive visual display of which country is more pro-vaccine. A scatter plot with error bar is more suitable for this task and should be more ye catching.
 </td>
-<td style="text-align:center;width: 22em; border-bottom: 1px solid">
+<td style="text-align:left;width: 22em; border-bottom: 1px solid">
 Make the stacked bar chart showing on the left of the stacked bar chart and the portions of the stacked bar chart highlighted based on the country selected in the scatter plot chart.
 </td>
 </tr>
 <tr>
-<td style="text-align:center;width: 22em; border-bottom: 1px solid">
+<td style="text-align:left;width: 22em; border-bottom: 1px solid">
 The legend title ”vac 1” has no meaning. Actually, we do not need a legend title.
 </td>
-<td style="text-align:center;width: 22em; border-bottom: 1px solid">
+<td style="text-align:left;width: 22em; border-bottom: 1px solid">
 Unshown the legend.
 </td>
 </tr>
 <tr>
-<td style="text-align:center;width: 22em; border-bottom: 1px solid">
+<td style="text-align:left;width: 22em; border-bottom: 1px solid">
 The legend of the stacked bar chart is too far away and is not nicely presented.
 </td>
-<td style="text-align:center;width: 22em; border-bottom: 1px solid">
+<td style="text-align:left;width: 22em; border-bottom: 1px solid">
 Place the legend adjacent to the stacked bar chart and edit the aliases so that it indicates the support degree to vaccine.
 </td>
 </tr>
 <tr>
-<td style="text-align:center;width: 22em; border-bottom: 1px solid">
+<td style="text-align:left;width: 22em; border-bottom: 1px solid">
 Inconsistent x-axis labels across the two charts, where the x-axis labels for the left chart is shown as whole number while the right chart us shown to 1 decimal place.
 </td>
-<td style="text-align:center;width: 22em; border-bottom: 1px solid">
+<td style="text-align:left;width: 22em; border-bottom: 1px solid">
 Synchronised the scale of the two charts and standardised the decimal places across all the axis.
 </td>
 </tr>
 <tr>
-<td style="text-align:center;width: 22em; border-bottom: 1px solid">
+<td style="text-align:left;width: 22em; border-bottom: 1px solid">
 Since we can easily recognise the y aixs of the two charts arrange countries, a field label is not needed
 </td>
-<td style="text-align:center;width: 22em; border-bottom: 1px solid">
+<td style="text-align:left;width: 22em; border-bottom: 1px solid">
 Remove the field label.
 </td>
 </tr>
@@ -2309,7 +2309,11 @@ Remove the field label.
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="6.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
-<h3 id="create-the-scatter-plot-chart-with-error-bar">3.2 Create the scatter plot chart with error bar</h3>
+<h3 id="create-the-parameter-and-filter-for-dynamic-presentation-based-on-measure-and-value-selected">3.2 Create the parameter and filter for dynamic presentation based on measure and value selected</h3>
+<p>The overall objective of this step is to create a filter that is variable. The filter is controlled by a parameter and allow users to indicate the measure they would like to have a closer look into. By filtering out unwanted observation, users are able to focus on(partition) observations that contain certain measure value and perform analysis on them. This way, we can compare the groups that have different measure value.</p>
+<p>First of all, we are going to create a parameter that consist of all the measures grouping by which we would like to have a more detailed analysis. Click the small triangle at the top right corner in the data field of our sheet to create a parameter called “VariableSelection”. Set the datatype to be “string” and allowable values to be list and input the measures in the list editing field.</p>
+<p>After that, we need to create a calculation field that identify the variable selected for group comparison.</p>
+<h3 id="create-the-scatter-plot-chart-with-error-bar">3.3 Create the scatter plot chart with error bar</h3>
 <p>We are going to check the probability of positive attitude and its lower and higher confidence interval.</p>
 <p>First of all, we are going to create a parameter to indicate the confidence level we would like to accept. Click the small triangle in the data field of our sheet, we can create parameters. Set the datatype to be “string” and allowable values to be list and input the value of the list in the list editing field.</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -2344,7 +2348,9 @@ Remove the field label.
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="16.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
-<p>With these calculation fields, we are able to draw our scatter plots now. We drag measure values to columns and country to rows. For the measure values, we only need the CI_lower and CI_higher. Then we drag ProbabilityPositiveView into the graph. Then we under the “measure values”mark, we set the graph pattern to line and measure values as the path variable. As the last step, we set sort country descendingly by ProbabilityPsotiveView.</p>
+<p>With these calculation fields, we are able to draw our scatter plots now. We drag measure values to columns and country to rows. For the measure values, we only need the CI_lower and CI_higher. Then we drag ProbabilityPositiveView into the graph, “VariableSelected” to the filter shelf and apply it to all worksheets using this data sourse.</p>
+<p>Under The “all” mark, we set “VariableSelected” to detail variable and set the value used to be attribute and under the “measure values”mark, we set the graph pattern to line and measure values as the path variable.</p>
+<p>As the last step, we set sort country descendingly by ProbabilityPsotiveView.</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="17.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
@@ -2354,7 +2360,7 @@ Remove the field label.
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="19.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
-<h3 id="create-the-stacked-barchart">3.3 Create the stacked barchart</h3>
+<h3 id="create-the-stacked-barchart">3.4 Create the stacked barchart</h3>
 <p>We are going to calculate the starting point of each level of attitude toward vaccine and let the length of them to be their percentage over the total observation.</p>
 <p>Six calculation fields needed here.</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -2378,13 +2384,14 @@ Remove the field label.
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="26.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
+<p>We drag country to the rows and “startpercentofeachscore” to the columns. We then set the color determination variable to be “AttitudeVACC” and “VariableSelected” to be detail variable and set the value used to be attribute. Set size determination variable to be “percentageofeachscore”. We aldo neetd to let “startpercentofeachscore” and “percentageofeachscore” computing using attitudeVACC. Since we have applied the “VariableSelected” to all worksheet use this data source, you will see the filter is already there.</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="27.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="28.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
-<h3 id="create-the-dashboard">3.4 Create the dashboard</h3>
+<h3 id="create-the-dashboard">3.5 Create the dashboard</h3>
 <p>Drag the individual graph into the area wanted Add the actions that allow user to manipulate the data visualization. Three actions need here. One is filter action that filter out all value of the infection and consequence charts. Values in these two charts will only show when user selected the country in the AttitudeVACC chart. The other two highlight action will highlight the countries selected or hovered around in the Attitude VACC chart.</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="29.png" width="400" style="display: block; margin: auto;" /></p>
