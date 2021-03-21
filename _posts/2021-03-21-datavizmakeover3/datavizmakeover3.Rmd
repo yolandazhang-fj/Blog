@@ -87,7 +87,7 @@ knitr::include_graphics("8.png")
 ### 3.3 Trend by year
 
 1.	Drag ‘event date’ to Columns and choose continuous year.
-2.	Drag “event id No cnty” to Rows and set its measure to be sum.
+2.	Drag “event id No cnty” to Rows and set its measure to be count.
 3.	Drag event type into the graph canvas.
 4.	Set the color decision variable to be event type
 
