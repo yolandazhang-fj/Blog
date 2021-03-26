@@ -235,7 +235,7 @@ With these calculation fields, we are able to draw our scatter plots now.
 We drag measure values to columns and country to rows. For the measure values, we only need the CI_lower and CI_higher.
 Then we drag ProbabilityPositiveView into the graph, "VariableSelected" to the filter shelf and apply it to all worksheets using this data sourse.
 
-Under The "all" mark, we set “VariableSelected” to detail variable and set the value used to be attribute and under the “measure values”mark, we set the graph pattern to line and measure values as the path variable. 
+Under The "all" mark, we set “VariableSelected” to be the decision variable of detail and set a proper level of opacity under color node; Under the “measure values”mark, we set the graph pattern to line and measure values as the path variable. 
 
 As the last step, we set sort country descendingly by ProbabilityPsotiveView.
 
@@ -339,17 +339,35 @@ knitr::include_graphics("31.png")
 # 4. Conclusion
 a.	The five most_pro_vaccine countries show a negative relationship between attitude to vaccine and infection expectation; The five least_pro_vaccine countries show a positive relationship between attitude to vaccine and infection expectation.
 
-b.	Two great leaps of consequence expectation could be observed at the third and nineth most_pro_vaccine countries. Which means if we divided the countries into three groups based on attitude toward vaccine, in the group level, consequence expectation and attitude toward vaccine relates negatively—those are more likely to get the vaccine believe that they have a higher probability of bad consequence if infected. Within each group, however, those are more likely to get the vaccine believe that they have a less probability of bad consequence if infected.
+
+```{r Infection, echo=FALSE, out.width = 400,fig.align = 'center'}
+knitr::include_graphics("Infection.png")
+```
+
+b.	Two great leaps of consequence expectation could be observed at the third and ninth most_pro_vaccine countries. Which means if we divided the countries into three groups based on attitude toward vaccine, in the group level, consequence expectation and attitude toward vaccine relates negatively—those are more likely to get the vaccine believe that they have a higher probability of bad consequence if infected. Within each group, however, those are more likely to get the vaccine believe that they have a less probability of bad consequence if infected.
 
 
+```{r Consequence, echo=FALSE, out.width = 400,fig.align = 'center'}
+knitr::include_graphics("Consequence.png")
+```
+
+c.  The older the respondent, the more likely he/she will take vaccine.
+```{r Age, echo=FALSE, out.width = 400,fig.align = 'center'}
+knitr::include_graphics("Age.png")
+```
 
 
+d.  Males are more likely to take vaccine than females.
+```{r Gender, echo=FALSE, out.width = 400,fig.align = 'center'}
+knitr::include_graphics("Gender.png")
+```
 
 
+e.  People who have a full-time employment are more likely to take vaccine than those out of work.
 
-
-
-
+```{r Employment, echo=FALSE, out.width = 400,fig.align = 'center'}
+knitr::include_graphics("Employment.png")
+```
 
 
 
