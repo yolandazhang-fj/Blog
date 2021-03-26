@@ -115,7 +115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["1.jpg","10.png","11.png","12.png","13.png","14.png","15.png","16.png","17.png","18.png","19.png","2.png","20.png","21.png","22.png","23.png","24.png","25.png","26.png","27.png","28.png","29.png","3.png","30.png","31.png","4.png","5.png","6.png","7.png","8.png","9.png","datavizmakeover2_files/anchor-4.2.2/anchor.min.js","datavizmakeover2_files/bowser-1.9.3/bowser.min.js","datavizmakeover2_files/distill-2.2.21/template.v2.js","datavizmakeover2_files/header-attrs-2.6/header-attrs.js","datavizmakeover2_files/jquery-1.11.3/jquery.min.js","datavizmakeover2_files/kePrint-0.0.1/kePrint.js","datavizmakeover2_files/lightable-0.0.1/lightable.css","datavizmakeover2_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["1.jpg","10.png","11.png","12.png","13.png","14.png","15.png","16.png","17.png","18-29.PNG","18.png","19.png","2.png","20.png","21.png","22.png","23.png","24.png","25.png","26.png","27.png","28.png","29.png","3.png","30.png","31.png","4.png","5.png","6.png","7.png","70&Above.PNG","8.png","9.png","Age.PNG","Consequence.PNG","datavizmakeover2_files/anchor-4.2.2/anchor.min.js","datavizmakeover2_files/bowser-1.9.3/bowser.min.js","datavizmakeover2_files/distill-2.2.21/template.v2.js","datavizmakeover2_files/header-attrs-2.6/header-attrs.js","datavizmakeover2_files/jquery-1.11.3/jquery.min.js","datavizmakeover2_files/kePrint-0.0.1/kePrint.js","datavizmakeover2_files/lightable-0.0.1/lightable.css","datavizmakeover2_files/webcomponents-2.0.0/webcomponents.js","Employment.PNG","Employment2.PNG","Female.PNG","Gender.PNG","Infection.PNG","Male.PNG"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1741,7 +1741,7 @@ Remove the field label.
 <p><img src="16.png" width="400" style="display: block; margin: auto;" /></p>
 </div>
 <p>With these calculation fields, we are able to draw our scatter plots now. We drag measure values to columns and country to rows. For the measure values, we only need the CI_lower and CI_higher. Then we drag ProbabilityPositiveView into the graph, “VariableSelected” to the filter shelf and apply it to all worksheets using this data sourse.</p>
-<p>Under The “all” mark, we set “VariableSelected” to detail variable and set the value used to be attribute and under the “measure values”mark, we set the graph pattern to line and measure values as the path variable.</p>
+<p>Under The “all” mark, we set “VariableSelected” to be the decision variable of detail and set a proper level of opacity under color node; Under the “measure values”mark, we set the graph pattern to line and measure values as the path variable.</p>
 <p>As the last step, we set sort country descendingly by ProbabilityPsotiveView.</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="17.png" width="400" style="display: block; margin: auto;" /></p>
@@ -1796,9 +1796,35 @@ Remove the field label.
 </div>
 <h1 id="conclusion">4. Conclusion</h1>
 <ol type="a">
-<li><p>The five most_pro_vaccine countries show a negative relationship between attitude to vaccine and infection expectation; The five least_pro_vaccine countries show a positive relationship between attitude to vaccine and infection expectation.</p></li>
-<li><p>Two great leaps of consequence expectation could be observed at the third and nineth most_pro_vaccine countries. Which means if we divided the countries into three groups based on attitude toward vaccine, in the group level, consequence expectation and attitude toward vaccine relates negatively—those are more likely to get the vaccine believe that they have a higher probability of bad consequence if infected. Within each group, however, those are more likely to get the vaccine believe that they have a less probability of bad consequence if infected.</p></li>
+<li>The five most_pro_vaccine countries show a negative relationship between attitude to vaccine and infection expectation; The five least_pro_vaccine countries show a positive relationship between attitude to vaccine and infection expectation.</li>
 </ol>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="Infection.PNG" width="400" style="display: block; margin: auto;" /></p>
+</div>
+<ol start="2" type="a">
+<li>Two great leaps of consequence expectation could be observed at the third and ninth most_pro_vaccine countries. Which means if we divided the countries into three groups based on attitude toward vaccine, in the group level, consequence expectation and attitude toward vaccine relates negatively—those are more likely to get the vaccine believe that they have a higher probability of bad consequence if infected. Within each group, however, those are more likely to get the vaccine believe that they have a less probability of bad consequence if infected.</li>
+</ol>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="Consequence.PNG" width="400" style="display: block; margin: auto;" /></p>
+</div>
+<ol start="3" type="a">
+<li>The older the respondent, the more likely he/she will take vaccine.
+<div class="layout-chunk" data-layout="l-body">
+<img src="Age.PNG" width="400" style="display: block; margin: auto;" /></li>
+</ol>
+</div>
+<ol start="4" type="a">
+<li>Males are more likely to take vaccine than females.
+<div class="layout-chunk" data-layout="l-body">
+<img src="Gender.PNG" width="400" style="display: block; margin: auto;" /></li>
+</ol>
+</div>
+<ol start="5" type="a">
+<li>People who have a full-time employment are more likely to take vaccine than those out of work.</li>
+</ol>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="Employment.PNG" width="400" style="display: block; margin: auto;" /></p>
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
