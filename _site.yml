@@ -13,4 +13,4 @@ navbar:
       href: VizAnaPro.html
     - text: "About"
       href: about.html
-output: 
+output: distill::distill article
