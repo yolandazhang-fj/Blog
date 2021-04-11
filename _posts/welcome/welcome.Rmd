@@ -5,8 +5,7 @@ description: |
   reading what we have to say!
 author:
   - name: Yolanda Zhang 
-    affiliation: Spacely Sprockets
-    affiliation_url: https://example.com/spacelysprokets
+    
 date: 01-04-2021
 output:
   distill::distill_article:
